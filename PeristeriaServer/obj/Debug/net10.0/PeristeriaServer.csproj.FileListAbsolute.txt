@@ -1,0 +1,14 @@
+C:\Users\bensi\RiderProjects\PeristeriaServer\PeristeriaServer\bin\Debug\net10.0\PeristeriaServer.exe
+C:\Users\bensi\RiderProjects\PeristeriaServer\PeristeriaServer\bin\Debug\net10.0\PeristeriaServer.deps.json
+C:\Users\bensi\RiderProjects\PeristeriaServer\PeristeriaServer\bin\Debug\net10.0\PeristeriaServer.runtimeconfig.json
+C:\Users\bensi\RiderProjects\PeristeriaServer\PeristeriaServer\bin\Debug\net10.0\PeristeriaServer.dll
+C:\Users\bensi\RiderProjects\PeristeriaServer\PeristeriaServer\bin\Debug\net10.0\PeristeriaServer.pdb
+C:\Users\bensi\RiderProjects\PeristeriaServer\PeristeriaServer\obj\Debug\net10.0\PeristeriaServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bensi\RiderProjects\PeristeriaServer\PeristeriaServer\obj\Debug\net10.0\PeristeriaServer.AssemblyInfoInputs.cache
+C:\Users\bensi\RiderProjects\PeristeriaServer\PeristeriaServer\obj\Debug\net10.0\PeristeriaServer.AssemblyInfo.cs
+C:\Users\bensi\RiderProjects\PeristeriaServer\PeristeriaServer\obj\Debug\net10.0\PeristeriaServer.csproj.CoreCompileInputs.cache
+C:\Users\bensi\RiderProjects\PeristeriaServer\PeristeriaServer\obj\Debug\net10.0\PeristeriaServer.dll
+C:\Users\bensi\RiderProjects\PeristeriaServer\PeristeriaServer\obj\Debug\net10.0\refint\PeristeriaServer.dll
+C:\Users\bensi\RiderProjects\PeristeriaServer\PeristeriaServer\obj\Debug\net10.0\PeristeriaServer.pdb
+C:\Users\bensi\RiderProjects\PeristeriaServer\PeristeriaServer\obj\Debug\net10.0\PeristeriaServer.genruntimeconfig.cache
+C:\Users\bensi\RiderProjects\PeristeriaServer\PeristeriaServer\obj\Debug\net10.0\ref\PeristeriaServer.dll
