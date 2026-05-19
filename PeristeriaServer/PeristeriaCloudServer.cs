@@ -1,4 +1,7 @@
-﻿namespace PeristeriaServer;
+﻿using System.Diagnostics;
+
+
+namespace PeristeriaServer;
 
 using System.Collections.Concurrent;
 using System.Net;
@@ -39,6 +42,7 @@ internal class PeristeriaCloudServer {
         }
     }
     async Task HandleClientAsync(TcpClient client) {
+        Console.WriteLine($"{client.Client.RemoteEndPoint}");
         string remoteIp = ((IPEndPoint)client.Client.RemoteEndPoint!).Address.ToString();
         
         
@@ -55,7 +59,7 @@ internal class PeristeriaCloudServer {
         try {
             NetworkStream stream = client.GetStream();
             byte[] headerField = new byte[HEADER_LENGTH];
-            await stream.ReadExactlyAsync(headerField, 0, HEADER_LENGTH);
+            await stream.ReadExactlyAsync(headerField, 0, 1);
             byte headerValue = headerField[0];
             HeaderEnum header = (HeaderEnum)headerValue;
             
@@ -90,7 +94,9 @@ internal class PeristeriaCloudServer {
                 if (header == HeaderEnum.SaveData) {
                     Directory.CreateDirectory("Saves");
                     Directory.CreateDirectory($"Saves/{name}");
+                    Console.WriteLine($"Saving to {name}");
                     await File.WriteAllTextAsync($"Saves/{name}/Save.json", json);
+                    Console.WriteLine($"Saved to {name}");
                 } 
                 else if (header == HeaderEnum.LeaderboardData) {
                     Directory.CreateDirectory("Leaderboard");

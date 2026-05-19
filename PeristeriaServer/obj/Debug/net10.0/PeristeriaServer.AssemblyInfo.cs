@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PeristeriaServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+539ec59588e8b2fa88802cbea5fd84b9a77b3992")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5b8489ec205051600cc2357f4205e1e2f1b8c60")]
 [assembly: System.Reflection.AssemblyProductAttribute("PeristeriaServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PeristeriaServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
