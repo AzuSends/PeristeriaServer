@@ -23,6 +23,9 @@ internal class PeristeriaCloudServer {
         LoadRequest = 3
     }
     
+    static readonly SemaphoreSlim _metricsLock = new(1, 1);
+
+    
     
     public async static Task Main(string[] args) {
         PeristeriaCloudServer server = new PeristeriaCloudServer();
@@ -106,7 +109,12 @@ internal class PeristeriaCloudServer {
                 else if (header == HeaderEnum.MetricsData) {
                     Directory.CreateDirectory("Metrics");
                     Directory.CreateDirectory($"Metrics/{name}");
-                    await File.WriteAllTextAsync($"Metrics/{name}/Save.json", json);
+                    await _metricsLock.WaitAsync();
+                    try {
+                        await File.AppendAllTextAsync($"Metrics/{name}/Save.json", json + "\n");
+                    } finally {
+                        _metricsLock.Release();
+                    }
                 }
                 Console.WriteLine($"Received: {json} from {name}");
                 byte[] response = Encoding.UTF8.GetBytes("OK");
